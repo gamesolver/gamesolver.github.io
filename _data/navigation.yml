@@ -1,0 +1,18 @@
+# main links links
+main:
+  - title: "About"
+    url: /about
+
+  - title: "Connect Four Solver"
+    url: http://connect4.gamesolver.org
+
+side:
+  - title: Solving Connect Four
+    children:
+      - title: "1. Introduction"
+        url: /solving-connect-four/01-introduction/
+      - title: "2. Test protocol"
+        url: /solving-connect-four/02-test-protocol/
+
+
+

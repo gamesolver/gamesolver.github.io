@@ -1,0 +1,26 @@
+---
+layout: archive
+author_profile: true
+---
+
+{% include base_path %}
+
+<!--
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts }}</h3>
+  {% for post in paginator.posts %}
+  {% include archive-single.html %}
+  {% endfor %}
+{% include paginator.html %}
+-->
+
+
+
+  {% unless site.solving-connect-four.output == false %}
+    <h1 id="solving-connect-four" class="archive__subtitle">Solving Connect Four</h1>
+    {% for post in site.solving-connect-four %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endunless %}
+
+
+
