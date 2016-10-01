@@ -1,7 +1,7 @@
 ---
-title:  "Part 2 -- Test protocol"
+title:  "Part 2 -- Benchmarking solvers"
 date:   2016-10-01 00:00:00 +0000
-excerpt: "Position's notation and score -- solver benchmarking"
+excerpt: "Notation and score of Connect 4 positions"
 ---
 
 Before coding, we first introduce how to evaluate a position and how to measure and compare the performance of a Connect 4 solver.
