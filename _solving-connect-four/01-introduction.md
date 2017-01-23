@@ -24,8 +24,8 @@ Later, with more computational power, the game was strongly solved using brute f
 
 The final step in solving Connect Four is to compute the best number of plies before the end of the game in addition to outcome (win, loss, draw). [GameCrafters](https://www.ocf.berkeley.edu/~gamers/) from Berkely university provided a first online solver[^5] computing the number of remaining moves to perform the perfect strategy. As well as Christian Kollmann's solver build as student project in Graz University of Technology[^6]. Mine[^7], is the acheivement of a nostagic project: my first big computer program was a Connect Four (non perfect) AI, coded long time ago when I was 16 years old.
 
-[^5]: GameCrafters, Berkeley University, [Connect Four solver](http://nyc.cs.berkeley.edu:8090/gcweb/ui/game.jsp?game=connect4)
-[^6]: Christian Kollmann, Graz University of Technology, [Connect Four solver](http://connect4.ist.tugraz.at/)
+[^5]: (defunct) GameCrafters, Berkeley University, [Connect Four solver](http://nyc.cs.berkeley.edu:8090/gcweb/ui/game.jsp?game=connect4) 
+[^6]: Christian Kollmann, Graz University of Technology, [Connect Four solver](http://connect4.ist.tugraz.at:8080/)
 [^7]: Pascal Pons, gamesolver.org, 2015, [Connect Four solver](http://connect4.gamesolver.org/)
 
 # Purpose of this tutorial
