@@ -13,6 +13,8 @@ side:
         url: /solving-connect-four/01-introduction/
       - title: "2. Test protocol"
         url: /solving-connect-four/02-test-protocol/
+      - title: "3. MinMax algorithm"
+        url: /solving-connect-four/03-minmax/
 
 
 
