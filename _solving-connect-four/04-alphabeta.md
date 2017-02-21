@@ -66,7 +66,7 @@ Check the full [source code](https://github.com/PascalPons/connect4/releases/tag
 
 # Weak solver
 
-Another benefit of alpha-beta is that you can easily implement a weak solver that only tells you the win/draw/loose outcome of a position by calling evaluating a node with the \[-1;1\] score window. 
+Another benefit of alpha-beta is that you can easily implement a weak solver that only tells you the win/draw/loss outcome of a position by calling evaluating a node with the \[-1;1\] score window. 
 
 
 # Benchmark
