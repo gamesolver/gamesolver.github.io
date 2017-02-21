@@ -85,8 +85,6 @@ Then the Negamax function allowing to score any non final (without aligment) pos
  *    the number of moves before the end you will lose (the faster you lose, the lower your score).
  */
 int negamax(const Position &P) {
-  nodeCount++; // increment counter of explored nodes
-
   if(P.nbMoves() == Position::WIDTH*Position::HEIGHT) // check for draw game
     return 0; 
 
@@ -120,13 +118,14 @@ Here is the performance evaluation of this first basic implementation. You will 
 |Solver                        |Test Set name   |mean time    |mean nb pos  |pos/ms  |
 |------------------------------|----------------|-------------|-------------|--------|
 |MinMax (strong solver)        |End-Easy        |790.28 μs    |11,024       |13,950  |
-|MinMax (strong solver)        |Middle-Easy     |>2h          |N/A          |N/A     |
-|MinMax (strong solver)        |Middle-Medium   |>80h         |N/A          |N/A     |
-|MinMax (strong solver)        |Begin-Easy      |>80h         |N/A          |N/A     |
-|MinMax (strong solver)        |Begin-Medium    |>80h         |N/A          |N/A     |
-|MinMax (strong solver)        |Begin-Hard      |>80h         |N/A          |N/A     |
+|MinMax (strong solver)        |Middle-Easy     |N/A          |N/A          |N/A     |
+|MinMax (strong solver)        |Middle-Medium   |N/A          |N/A          |N/A     |
+|MinMax (strong solver)        |Begin-Easy      |N/A          |N/A          |N/A     |
+|MinMax (strong solver)        |Begin-Medium    |N/A          |N/A          |N/A     |
+|MinMax (strong solver)        |Begin-Hard      |N/A          |N/A          |N/A     |
 
 *mean time*: average computation time (per test case). *mean nb pos*: average number of explored nodes (per test case).
+*N/A* means that the algorithm was too slow to evaluate the 1,000 test cases within 24h.
 
 # Tutorial plan
   {% include nav_list nav="side" %}
