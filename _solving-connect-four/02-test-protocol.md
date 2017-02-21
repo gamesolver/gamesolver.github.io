@@ -69,7 +69,7 @@ To be able to automate our benchmarks, we requiere that the solvers follow the s
 
 As a first benchmark, we evaluate [John Tromp's Fhourstone solver](https://github.com/gamesolver/fhourstones). We used this modified version of the solver to produce the necessary output and get our first reference benchmark:
 
-|Solver                        |Test Set name   |mean time    |mean nb nodes|nodes/s |
+|Solver                        |Test Set name   |mean time    |mean nb pos  |K pos/s |
 |------------------------------|----------------|-------------|-------------|--------|
 |Fhourstone (weak solver)      |End-Easy        |3.69 μs      |39.8         |10,809  |
 |Fhourstone (weak solver)      |Middle-Easy     |176 μs       |2101         |11,903  |
@@ -78,7 +78,7 @@ As a first benchmark, we evaluate [John Tromp's Fhourstone solver](https://githu
 |Fhourstone (weak solver)      |Begin-Medium    |111 ms       |1,296,900    |11,681  |
 |Fhourstone (weak solver)      |Begin-Hard      |7.95 s       |93,425,600   |11,751  |
 
-*mean time*: average computation time (per test case). *mean nb nodes*: average number of explored nodes (per test case).
+*mean time*: average computation time (per test case). *mean nb pos*: average number of explored nodes (per test case).
 
 # Tutorial plan
   {% include nav_list nav="side" %}

@@ -115,7 +115,7 @@ While it strongly solves Connect 4, the following benchmark shows that it is not
 Here is the performance evaluation of this first basic implementation. You will note that this simple implementation was only able to process the easiest test set. It is able to process the same number of position per second than our reference benchmark, but it explores way to many positions.
 
 
-|Solver                        |Test Set name   |mean time    |mean nb pos  |pos/ms  |
+|Solver                        |Test Set name   |mean time    |mean nb pos  |K pos/s |
 |------------------------------|----------------|-------------|-------------|--------|
 |MinMax (strong solver)        |End-Easy        |790.28 μs    |11,024       |13,950  |
 |MinMax (strong solver)        |Middle-Easy     |N/A          |N/A          |N/A     |
