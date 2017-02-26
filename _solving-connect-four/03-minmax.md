@@ -16,7 +16,7 @@ This leads to a reccursive algorithm to score a position. At each step:
 - while when it's your opponent's turn, the score is the minimum score of next possible positions (your opponent will play the move that minimizes your score, and maximizes his).
 - final positions (draw game after 42 moves or position with a winning alignment) get a score according to our score function defined in [part 2](/solving-connect-four/02-test-protocol/#positions-score)
 
-In practice exploring the full tree is most of the time untractable due to exponential growth of tree size with search depth. Most AI implementation explore the tree up to a given depth and use euristic score functions that evaluate these non final positions. In this tutorial we will build a perfect solver and won't rely on euristic scores. Thus we will explore the game until the end and our score function only gives exact score of final positions.
+In practice exploring the full tree is most of the time untractable due to exponential growth of tree size with search depth. Most AI implementation explore the tree up to a given depth and use heuristic score functions that evaluate these non final positions. In this tutorial we will build a perfect solver and won't rely on heuristic scores. Thus we will explore the game until the end and our score function only gives exact score of final positions.
 
 # The [Negamax](https://en.wikipedia.org/wiki/Negamax) variant 
 

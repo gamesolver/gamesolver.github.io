@@ -15,8 +15,10 @@ side:
         url: /solving-connect-four/02-test-protocol/
       - title: "3. MinMax algorithm"
         url: /solving-connect-four/03-minmax/
-      - title: "4. AlphaBeta algorithm"
+      - title: "4. Alpha-beta algorithm"
         url: /solving-connect-four/04-alphabeta/
+      - title: "5. Column exploration order"
+        url: /solving-connect-four/05-column-exloration-order/
 
 
 
