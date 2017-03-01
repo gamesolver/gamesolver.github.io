@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "blog.gamesolver.org"
+title                    : "Solving Connect 4 with a perfect AI"
 title_separator          : "-"
 name                     : "Pascal Pons"
 description              : "Artificial Intelligence algorithms blog and comprehensive tutorial to build a perfect Connect Four solver."
