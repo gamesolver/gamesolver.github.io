@@ -18,7 +18,13 @@ side:
       - title: "4. Alpha-beta algorithm"
         url: /solving-connect-four/04-alphabeta/
       - title: "5. Column exploration order"
-        url: /solving-connect-four/05-column-exloration-order/
+        url: /solving-connect-four/05-column-exploration-order/
+      - title: "6. Bitboard"
+        url: /solving-connect-four/06-bitboard/
+      - title: "7. Transposition table"
+        url: /solving-connect-four/07-transposition-table
+      - title: "8. Iterative deepening"
+        url: /solving-connect-four/08-iterative-deepening/
 
 
 
