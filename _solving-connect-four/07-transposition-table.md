@@ -1,6 +1,6 @@
 ---
 title:  "Part 7 -- Transposition Table"
-date:   2017-02-25 00:00:00 +0000
+date:   2017-03-15
 excerpt: "Caching intermediate results to avoid computing many times the same score"
 ---
 

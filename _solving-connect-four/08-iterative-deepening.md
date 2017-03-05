@@ -1,6 +1,6 @@
 ---
 title:  "Part 8 -- Iterative Deepening"
-date:   2017-02-25 00:00:00 +0000
+date:   2017-03-30
 excerpt: "Increase progressively the depth of exploration"
 ---
 
