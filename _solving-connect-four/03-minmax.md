@@ -1,6 +1,6 @@
 ---
 title:  "Part 3 -- MinMax algorithm"
-date:   2017-02-19 00:00:00 +0000
+date:   2017-02-19
 excerpt: "First version using basic algorithm"
 ---
 

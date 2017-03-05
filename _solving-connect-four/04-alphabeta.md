@@ -1,6 +1,6 @@
 ---
 title:  "Part 4 -- Alpha-beta algorithm"
-date:   2017-02-20 00:00:00 +0000
+date:   2017-02-20
 excerpt: "Pruning the search tree"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title:  "Part 5 -- Column exploration order"
-date:   2017-02-25 00:00:00 +0000
+date:   2017-02-25
 excerpt: "Alpha-beta is more efficient when you explore best move first"
 ---
 

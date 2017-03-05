@@ -1,6 +1,6 @@
 ---
 title:  "Part 1 -- Introduction"
-date:   2016-05-01 00:00:00 +0000
+date:   2016-05-01
 excerpt: "Solving Connect Four: history, references and tutorial goals."
 ---
 

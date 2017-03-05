@@ -1,6 +1,6 @@
 ---
 title:  "Part 2 -- Benchmarking solvers"
-date:   2016-10-01 00:00:00 +0000
+date:   2016-10-01
 excerpt: "Notation and score of Connect 4 positions"
 ---
 
