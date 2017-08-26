@@ -57,12 +57,7 @@ Full [source code](https://github.com/PascalPons/connect4/releases/tag/part8) co
 
 # Benchmark
 
-Exploring at a shallow depth first speeds up considerably the computation of position with a short term outcome (easy and medium test set). It has almost no impact on weak solver because we are using there a \[-1;1\] exploration windows that 
-
-
-
-For this benchmark, we took a 64MB transposition table (same size as Fhourstone reference). It reduces significantly the number of explored node, especially when a deeper search is needed. We are now able to solve most of the beginning of game test cases in a reasonbale time: 
-
+Exploring at a shallow depth first speeds up considerably the computation of position with a short term outcome (easy and medium test set). It has almost no impact on weak solver because we are using a \[-1;1\] exploration window that does not benefit much of the new strategy.
 
 
 |Solver                                 |Test Set name   |mean time    |mean nb pos  |K pos/s |
