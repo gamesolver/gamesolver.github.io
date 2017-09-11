@@ -71,7 +71,7 @@ Exploring at a shallow depth first speeds up considerably the computation of pos
 |---------------------------------------|----------------|-------------|-------------|--------|
 |Iterative Deepening (weak solver)      |End-Easy        |5.255 μs     |74.40        |14,170  |
 |Iterative Deepening (weak solver)      |Middle-Easy     |1.049 ms     |29,910       |28,520  |
-|Iterative Deepening (weak solver)      |Middle-Medium   |24.08 ms     |801,455      |33280   |
+|Iterative Deepening (weak solver)      |Middle-Medium   |24.08 ms     |801,455      |33,280   |
 |Iterative Deepening (weak solver)      |Begin-Easy      |1.113 s      |36,350,000   |32,650  |
 |Iterative Deepening (weak solver)      |Begin-Medium    |1.751 s      |63,590,000   |36,320  |
 |Iterative Deepening (weak solver)      |Begin-Hard      |N/A          |N/A          |N/A     |

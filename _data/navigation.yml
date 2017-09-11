@@ -25,6 +25,8 @@ side:
         url: /solving-connect-four/07-transposition-table
       - title: "8. Iterative deepening"
         url: /solving-connect-four/08-iterative-deepening/
+      - title: "9. Anticipate losing moves"
+        url: /solving-connect-four/09-anticipate-losing-moves/
 
 
 
