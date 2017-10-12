@@ -10,7 +10,7 @@ We wil see in this part how to use a bitmap encoding of positions to reduce sign
 
 Board positions can be stored in a compact an efficient way using W\*(H+1) bits for a board of height H and width W.
 
-Each column is encoded by H bits corresponding to its cells plus an extra bit on top of the column. A 7x6 bord will use 48 bits with the following bit order:
+Each column is encoded by H bits corresponding to its cells plus an extra bit on top of the column. A 7x6 bord will use 49 bits with the following bit order:
 
 ```
 .  .  .  .  .  .  .
