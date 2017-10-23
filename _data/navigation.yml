@@ -17,8 +17,8 @@ side:
         url: /solving-connect-four/03-minmax/
       - title: "4. Alpha-beta algorithm"
         url: /solving-connect-four/04-alphabeta/
-      - title: "5. Column exploration order"
-        url: /solving-connect-four/05-column-exploration-order/
+      - title: "5. Move exploration order"
+        url: /solving-connect-four/05-move-exploration-order/
       - title: "6. Bitboard"
         url: /solving-connect-four/06-bitboard/
       - title: "7. Transposition table"
@@ -27,6 +27,6 @@ side:
         url: /solving-connect-four/08-iterative-deepening/
       - title: "9. Anticipate losing moves"
         url: /solving-connect-four/09-anticipate-losing-moves/
-
-
-
+      - title: "10. Better move ordering"
+        url: /solving-connect-four/10-better-move-ordering/
+          

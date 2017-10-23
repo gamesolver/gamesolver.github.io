@@ -99,7 +99,7 @@ Meanwhile, identifiying the non-losing moves is an extra additional computation 
 |Solver                                   |Test Set name   |mean time    |mean nb pos  |K pos/s |
 ------------------------------------------|----------------|-------------|-------------|--------|
 |Skipping losing moves (strong solver)    |End-Easy        |4.606 μs     |70.71        |15,350  |
-|Skipping losing moves (strong solver)    |Middle-Easy     |124.4 μs     |4135         |33,230  |
+|Skipping losing moves (strong solver)    |Middle-Easy     |124.4 μs     |4,135        |33,230  |
 |Skipping losing moves (strong solver)    |Middle-Medium   |32.37 ms     |1,135,000    |35,070  |
 |Skipping losing moves (strong solver)    |Begin-Easy      |3.505 ms     |107,400      |30,630  |
 |Skipping losing moves (strong solver)    |Begin-Medium    |2.758 s      |110,800,000  |40,150  |
