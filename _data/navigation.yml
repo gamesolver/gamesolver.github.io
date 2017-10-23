@@ -29,4 +29,6 @@ side:
         url: /solving-connect-four/09-anticipate-losing-moves/
       - title: "10. Better move ordering"
         url: /solving-connect-four/10-better-move-ordering/
+      - title: "11. Optimized transposition table"
+        url: /solving-connect-four/11-optimized-transposition-table/
           
