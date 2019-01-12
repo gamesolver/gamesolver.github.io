@@ -65,7 +65,7 @@ The [acual implementation](https://github.com/PascalPons/connect4/releases/tag/p
 
 # Case of the 7x6 connect 4 board
 
-A 7x6 connect position key is 49 bits. We can use efficient 32bit storage of the key and 8bit storage of values as long as the transposition table size is an odd number greater than 2^17. In practice for this tutorial the size of the transposition table has been selected as the smallest prime number above 2^17, leading to a transposition table size of about (4+1)*2^23 bytes = 40MB.
+A 7x6 connect position key is 49 bits. We can use efficient 32bit storage of the key and 8bit storage of values as long as the transposition table size is an odd number greater than 2^17. In practice for this tutorial the size of the transposition table has been selected as the smallest prime number above 2^23, leading to a transposition table size of about (4+1)*2^23 bytes = 40MB.
 
 
 # Benchmark
