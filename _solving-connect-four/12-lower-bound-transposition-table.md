@@ -4,18 +4,19 @@ date:   2017-10-28
 excerpt: "Keeping lower bound of score in addition to upper bounds"
 ---
 
-When exploring a node with alpha-beta that is not pruned, we get an upper-bound of the score at the end of negamax function. So far we are storing this upper bound in our transposition table.
+When a node is not pruned by alpha-beta, we get an upper-bound of the score at the end of negamax function. So far we are storing this upper bound in our transposition table.
 
-However, our when the exploration is pruned by the alpha-beta cut, the returned score is a lower bound. Keeping this lower bound score in a transposition table can help reducing node exploration. Note however that, nodes with pruning are less expensive to explore than nodes without pruning (as we only partially explore pruned nodes while we fully explore non-pruned node). The expected gain is thus smaller using a lower bound transposition table than a upper bound transposition table.
+However, when the exploration is pruned by an alpha-beta cut, the returned score is a lower bound. Keeping and reusing these lower bound scores in a transposition table can help reducing the number of explored nodes.
 
-# Keeping both upper and lower bound in the same Transposition Table.
+however, pruned nodes are less expensive to explore than nodes without pruning (as we only partially explore pruned nodes while we fully explore non-pruned node). The expected gain is thus smaller than upper bound transposition tables.
 
-We want to keep both upper and lower bounds in transposition tables. It is possible to instanciate 2 Transposition Tables, one for upper bounds and one for lower bounds. It is also possible to store them in the same Transposition Table while adding a flag in the stored value to knwo what kind of bound it is. In practice, it appears that the second approach is more efficient for the same overall storage size.
+# Keeping both upper and lower bound in the same transposition table.
 
-We will thus store both upper and lower bounds in the same transposition table. We keep storing the same value for upper bounds and we shift the lower bound values by the max possible score. the number of possible values is doubled and is now 2*(max_score - min_score) and we have to make sure to give one additional bit of storage space to the Transposition Table values.
+We want to keep both upper and lower bounds in transposition tables. It is possible to instanciate two transposition tables, one for upper bounds and one for lower bounds. It is also possible to store them in the same table while adding a flag in the stored value to differentiate upper and lower bounds. In practice, it appears that this second approach is more efficient for the same overall storage size.
 
+We will thus store both upper and lower bounds in the same transposition table. We keep storing the same value for upper bounds and we shift (add a constant ofset) the lower bound values by the max possible score. the number of possible values is doubled and is now 2\*(max\_score - min\_score + 1). We also have to give one additional bit of storage to each transposition table values.
 
-The code is updated as below to store the new lower bounds in the alpha-beta pruning loop. Note thw new Transposition Table insertion right before returning eary score when score >= beta.
+The code is updated as below to store the new lower bounds in the alpha-beta pruning loop. Note the new transposition table insertion right before returning eary score when score >= beta.
 ```c++
      while(uint64_t next = moves.getNext()) {
           Position P2(P);
@@ -33,7 +34,7 @@ The code is updated as below to store the new lower bounds in the alpha-beta pru
         }        
 ```
 
-And this is how we update the fetching of the cached scores, updating respectively alpha or beta depending if we retreive a lower or an upper bound.
+And this is how we now fetch the cached scores, updating respectively alpha or beta depending on wether we retreived a lower or an upper bound.
 ```c++
 const uint64_t key = P.key();
 
