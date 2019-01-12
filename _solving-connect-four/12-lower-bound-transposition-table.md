@@ -1,6 +1,6 @@
 ---
 title:  "Part 12 -- Lower bound transposition table"
-date:   2017-10-28
+date:   2019-01-12
 excerpt: "Keeping lower bound of score in addition to upper bounds"
 ---
 
